@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de regalos de Pau</title>
 
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="bear">
+            🧸
+        </div>
+
+        <h1>Lista de regalos de Pau</h1>
+
+        <p>
+            Gracias por acompañarnos en este momento tan especial.
+            <br><br>
+            Si deseas hacernos un regalo, puedes elegir uno de la lista.
+            Una vez reservado aparecerá como <strong>Reservado</strong> para evitar duplicados.
+        </p>
+
+    </div>
+
+</header>
+
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Buscar un regalo..."
+    >
+
+</section>
+
+
+<main id="giftContainer">
+
+    <!-- Los regalos aparecerán aquí automáticamente -->
+
+</main>
+
+
+
+<!-- Ventana de reserva -->
+
+<div id="reservationModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>🎁 Reservar regalo</h2>
+
+        <p class="subtitle">
+            ¿Quién participa en este regalo?
+        </p>
+
+        <div id="participantsContainer">
+
+            <input
+                type="text"
+                class="participant"
+                placeholder="Nombre"
+            >
+
+        </div>
+
+        <button id="addParticipant">
+            + Añadir otra persona
+        </button>
+
+        <textarea
+            id="message"
+            placeholder="Mensaje para Pau (opcional)"
+        ></textarea>
+
+        <button id="confirmReservation" class="confirm-btn">
+            Confirmar reserva 💚
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    Hecho con mucho cariño para la llegada de Pau 💚
+
+</footer>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
